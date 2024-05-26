@@ -1,0 +1,17 @@
+<section class="bg-main-light p-4 w-75 mx-auto rounded-3 my-3 shadow">
+    <form [formGroup]="chckout" (ngSubmit)="handleForm()">
+        <div>
+            <label for="details">Details</label>
+            <textarea name="details" id="details" class="form-control mb-3" formControlName="details" ></textarea>
+        </div>
+        <div>
+            <label for="phone">phone</label>
+            <input type="tel" name="phone" id="phone" class="form-control mb-3" formControlName="phone" >
+        </div>
+        <div>
+            <label for="city">city</label>
+            <input type="text" name="city" id="city" class="form-control mb-3" formControlName="city" >
+        </div>
+        <button class="btn-main mt-3" >Chechout</button>
+    </form>
+</section>
